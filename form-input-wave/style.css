@@ -28,6 +28,7 @@ body {
   margin-bottom: 30px;
 }
 
+/* Register style  */
 .container a {
   text-decoration: none;
   color: lightblue;
@@ -64,6 +65,7 @@ body {
 }
 
 .form-control input {
+  /* background: transparent 表示背景透明无色 */
   background-color: transparent;
   border: 0;
   border-bottom: 2px #fff solid;
@@ -72,14 +74,18 @@ body {
   padding: 15px 0;
   font-size: 18px;
   color: #fff;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+/* :valid 选择器在表单元素的值需要根据指定条件验证时设置指定样式 */
+/* outline: 0 清除input focus时的默认outline */
 .form-control input:focus,
 .form-control input:valid {
   outline: 0;
-  border-bottom-color: lightblue;
+  border-bottom-color: rgb(173, 216, 230, .6);
 }
 
+/* input label  */
 .form-control label {
   position: absolute;
   top: 15px;
